@@ -14,10 +14,13 @@ mongoose.set('strictQuery', false);
 export default class DBConnection {
     private DBURL: string 
     private conn: any
+    private name: string
 
     constructor(ConnectionString: any) {
-        this.DBURL = ConnectionString
+        // this.DBURL = ConnectionString;
+        this.DBURL = 'mongodb://127.0.0.1:27017/boilerplate';
         this.conn = mongoose.createConnection(this.DBURL, options);
+        this.name = 'SHAKIR KALLUNGAL';
     }
     public getConn():mongoose.Connection{
         return this.conn;
@@ -25,6 +28,7 @@ export default class DBConnection {
     public async initDB() {
         return new Promise((resolve, reject) => {
             if (!this.conn) {
+                console.log(this.DBURL)
                 this.conn = mongoose.createConnection(this.DBURL, options);
             }
             if (process.env.NODE_ENV === 'development') {
@@ -40,6 +44,9 @@ export default class DBConnection {
                 resolve(this.conn);
             });
             this.conn.once('open', () => {
+                console.log(this.DBURL)
+                console.log(this.conn.once)
+                console.log(this.name)
                 console.log("MongoDB connected")
             });
         });
