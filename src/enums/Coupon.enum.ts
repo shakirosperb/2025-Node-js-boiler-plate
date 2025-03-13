@@ -1,0 +1,27 @@
+export enum COUPON_CATEGORY {
+    COMMON = 'COMMON',
+    CATEGORY = 'CATEGORY',
+    PRODUCT = 'PRODUCT',
+    BRAND = 'BRAND',
+}
+
+export enum COUPON_TYPE {
+    VALUE = 'VALUE',
+    PERCENTAGE = 'PERCENTAGE',
+}
+
+export enum COUPON_DURATION {
+    FULL_TIME = 'FULL_TIME',
+    DURATION = 'DURATION',
+    START_TIME = 'START_TIME'
+}
+
+export enum COUPON_PAYMENT_TYPE {
+    BOTH = 'BOTH',
+    ONLINE = 'ONLINE',
+    COD = 'COD'
+}
+
+export enum COUPON_DEFAULT {
+    "FIRST_ORDER" = "FIRST_ORDER"
+}

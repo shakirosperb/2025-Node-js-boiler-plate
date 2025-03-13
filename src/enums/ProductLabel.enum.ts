@@ -1,0 +1,10 @@
+export enum PRODUCT_LABEL_LAYOUT{
+    BASIC = "BASIC",
+    LAYOUT_1 = "LAYOUT_1",
+    LAYOUT_2 = "LAYOUT_2",
+    LAYOUT_3 = "LAYOUT_3",
+    LAYOUT_4 = "LAYOUT_4",
+    LAYOUT_5 = "LAYOUT_5",
+    LAYOUT_6 = "LAYOUT_6",
+    LAYOUT_7 = "LAYOUT_7",
+}

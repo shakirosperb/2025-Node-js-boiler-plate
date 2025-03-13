@@ -1,0 +1,15 @@
+export enum PRODUCT_TYPE {
+    NORMAL = "NORMAL",
+    SPECIAL = "SPECIAL" 
+}
+
+export enum PRODUCT_ORDER_TYPE {
+    DIRECT = "DIRECT",
+    PREORDER = "PREORDER" 
+}
+
+export enum PRODUCT_WEIGHT_CATEGORY {
+    LIGHT = "LIGHT",
+    MEDIUM = "MEDIUM",
+    HEAVY = "HEAVY"
+}

@@ -1,0 +1,34 @@
+export enum SECTION_LAYOUT {
+    CAROUSEL = 'CAROUSEL',
+    HIGHLIGHT = 'HIGHLIGHT',
+    SHORT_CONTENT = 'SHORT_CONTENT',
+    WIDE_CONTENT = 'WIDE_CONTENT',
+    IMAGE_GRID = 'IMAGE_GRID',
+    VIDEO = 'VIDEO',
+    FAQ_DATA = 'FAQ_DATA',
+    TESTIMONIAL = 'TESTIMONIAL',
+    PRODUCT_VARIANT = 'PRODUCT_VARIANT',
+  }
+  export enum  SECTION_CALL_TO_ACTION{
+    CHECKOUT = 'CHECKOUT',
+    CART = 'CART',
+    PRODUCT = 'PRODUCT',
+    CUSTOM = 'CUSTOM'
+  }
+  export enum  SECTION_PLATFORM{
+    WEB = 'WEB',
+    MOBILE = 'MOBILE',
+    COMMON = 'COMMON'
+  }
+  export enum SECTION_IMAGE_POSITION {
+    LEFT = 'LEFT',
+    RIGHT = 'RIGHT',
+    TOP = 'TOP',
+    BOTTOM = 'BOTTOM',
+  }
+  
+  export enum SECTION_TEXT_ALIGN {
+    LEFT = 'LEFT',
+    RIGHT = 'RIGHT',
+    CENTER = 'CENTER',
+  }

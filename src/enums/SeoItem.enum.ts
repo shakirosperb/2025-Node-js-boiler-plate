@@ -1,0 +1,8 @@
+export enum SEO_ITEM_MODULE{
+    PRODUCT = "PRODUCT",
+    CATEGORY = "CATEGORY",
+    BRAND = "BRAND",
+    COLLECTION = "COLLECTION",
+    BLOG = "BLOG",
+    PAGE = "PAGE"
+}

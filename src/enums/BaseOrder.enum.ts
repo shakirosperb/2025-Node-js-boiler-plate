@@ -1,0 +1,4 @@
+export enum BASE_ORDER_STATUS {
+    INITIATED = 'INITIATED',
+    CLOSED = 'CLOSED',
+}

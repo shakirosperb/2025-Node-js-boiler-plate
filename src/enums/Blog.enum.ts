@@ -1,0 +1,4 @@
+export enum BLOG_LINK_TYPE{
+    INTERNAL = "INTERNAL",
+    EXTERNAL = "EXTERNAL" 
+}
