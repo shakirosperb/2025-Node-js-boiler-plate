@@ -12,9 +12,10 @@ interface Obj {
 
 export default class CrudHelper<TResponse = any> {
     private model: DB_MODELS;
-
+    
     constructor(model: DB_MODELS){
         this.model = model;
+        console.log("--------------->>>",this.model)
     }
    
     /**
@@ -136,7 +137,7 @@ export default class CrudHelper<TResponse = any> {
     * @returns object
     */
     protected async aggregate(a: string, f?: Obj, p?: Obj, o?: Obj): Promise<IResponse<TResponse[]>> {
-        console.log({a,f,p,o});
+        console.log("---<<>>",a);
         try {
             let agg = (MODEL_OBJ['MAIN_DB'] as any)[this.model][a](f || {}, p || {}, o || {})
             console.log({agg});

@@ -7,7 +7,7 @@ import { DB_MODELS } from "@/enums/common.enum";
 import CrudHelper from "@/crud";
 
 export default class Banner extends CrudHelper<IBanner> {
-    constructor(){super(DB_MODELS.BANNER)}
+    constructor(){super(DB_MODELS.BANNER)} //banner model
 
     public async createBanner(bannerInputData: CreateBannerDto): Promise<IResponse<IBanner>> {
         let resp = new ResponseObject(2001, "Something went wrong")

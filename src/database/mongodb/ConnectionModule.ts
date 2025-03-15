@@ -12,11 +12,13 @@ require('mongoose').Promise = Promise;
 mongoose.set('strictQuery', false);
 
 export default class DBConnection {
+    // use cheyyunna variable name(varible declaration)
     private DBURL: string 
     private conn: any
-    private name: string
+    private name: string 
 
     constructor(ConnectionString: any) {
+        // use cheyyunna varibles values assing cheyyukka ;
         // this.DBURL = ConnectionString;
         this.DBURL = 'mongodb://127.0.0.1:27017/boilerplate';
         this.conn = mongoose.createConnection(this.DBURL, options);

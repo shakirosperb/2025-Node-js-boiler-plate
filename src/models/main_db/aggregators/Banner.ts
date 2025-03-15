@@ -2,6 +2,7 @@ import { Obj } from "@/interface/common"
 
 export default {
     basic: (f: Obj, p: Obj, _o: Obj) => {
+        console.log("EHT")
         let agg: Obj[] = [
             {
                 $match:f
