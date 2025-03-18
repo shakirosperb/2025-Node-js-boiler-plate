@@ -19,8 +19,8 @@ export default class DBConnection {
 
     constructor(ConnectionString: any) {
         // use cheyyunna varibles values assing cheyyukka ;
-        // this.DBURL = ConnectionString;
-        this.DBURL = 'mongodb://127.0.0.1:27017/boilerplate';
+        this.DBURL = ConnectionString;
+        // this.DBURL = 'mongodb://127.0.0.1:27017/boilerplate';
         this.conn = mongoose.createConnection(this.DBURL, options);
         this.name = 'SHAKIR KALLUNGAL';
     }
@@ -49,6 +49,7 @@ export default class DBConnection {
                 console.log(this.DBURL)
                 console.log(this.conn.once)
                 console.log(this.name)
+                console.log(process.env.APP_NAME)
                 console.log("MongoDB connected")
             });
         });
