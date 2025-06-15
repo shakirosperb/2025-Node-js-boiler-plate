@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from "@/utils/decarators";
+import { Controller, Get} from "@/utils/decarators";
 import { Request, Response } from "express";
 @Controller("/")
 export default class IndexController {
